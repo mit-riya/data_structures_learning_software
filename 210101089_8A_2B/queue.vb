@@ -18,7 +18,7 @@
         Next
     End Sub
 
-    Private Sub enqueue_btn_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+    Private Sub enqueue_btn_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles enqueue_btn.Click
         ' Enqueue an element to the queue
         If queueSize = 10 Then
             error_label.Text = "Queue is full"
@@ -34,7 +34,7 @@
         End If
     End Sub
 
-    Private Sub dequeue_btn_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+    Private Sub dequeue_btn_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles dequeue_btn.Click
         ' Dequeue an element from the queue
         If queueSize = 0 Then
             error_label.Text = "Queue is empty"
