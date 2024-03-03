@@ -83,6 +83,7 @@ Partial Class Register
         Me.password_tb.Name = "password_tb"
         Me.password_tb.Size = New System.Drawing.Size(321, 27)
         Me.password_tb.TabIndex = 5
+        Me.password_tb.UseSystemPasswordChar = True
         '
         'signup_btn
         '

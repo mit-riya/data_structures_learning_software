@@ -6,6 +6,42 @@ Public Class Vector
     Dim i As Integer = 0   'index
     Dim temp As Integer
 
+    ' Event handler for closing the form
+    Private Sub FormClosedHandler(ByVal sender As Object, ByVal e As FormClosedEventArgs)
+        ' Close the current form when the new form is closed
+        Me.Close()
+    End Sub
+
+    ' Event handler for the "Home" button click
+    Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
+        ' Create a new instance of the Home form
+        Dim f2 As New Home()
+
+        ' Add a handler to detect when the Home form is closed
+        AddHandler f2.FormClosed, AddressOf FormClosedHandler
+
+        ' Show the Home form
+        f2.Show()
+
+        ' Hide the current form (stack form)
+        Me.Hide()
+    End Sub
+
+    ' Event handler for the "Quiz" button click
+    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+        ' Create a new instance of the Quiz form
+        Dim f2 As New Quiz()
+
+        ' Add a handler to detect when the Quiz form is closed
+        AddHandler f2.FormClosed, AddressOf FormClosedHandler
+
+        ' Show the Quiz form
+        f2.Show()
+
+        ' Hide the current form (stack form)
+        Me.Hide()
+    End Sub
+
     'Insert button function
     Private Sub Insert_elem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Insert_elem.Click
         'Check whether input enetered is numerical or not

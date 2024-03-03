@@ -206,4 +206,37 @@ Public Class LinkedList
         delete_tb.Clear()
         new_num_tb.Clear()
     End Sub
+    ' Event handler for closing the form
+    Private Sub FormClosedHandler(ByVal sender As Object, ByVal e As FormClosedEventArgs)
+        ' Close the current form when the new form is closed
+        Me.Close()
+    End Sub
+
+    Private Sub quiz_btn_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles quiz_btn.Click
+        ' Create a new instance of the Home form
+        Dim f2 As New Quiz()
+
+        ' Add a handler to detect when the Home form is closed
+        AddHandler f2.FormClosed, AddressOf FormClosedHandler
+
+        ' Show the Home form
+        f2.Show()
+
+        ' Hide the current form (stack form)
+        Me.Hide()
+    End Sub
+
+    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+        ' Create a new instance of the Home form
+        Dim f2 As New Home()
+
+        ' Add a handler to detect when the Home form is closed
+        AddHandler f2.FormClosed, AddressOf FormClosedHandler
+
+        ' Show the Home form
+        f2.Show()
+
+        ' Hide the current form (stack form)
+        Me.Hide()
+    End Sub
 End Class

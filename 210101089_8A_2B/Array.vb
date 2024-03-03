@@ -104,6 +104,8 @@
     ' Event handler for the Reset button click
     Private Sub Reset_btn_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Reset_btn.Click
         ' Clear all TextBoxes and reset controls
+        n = 0
+        i = 0
         show_panel.Controls.Clear()
         insert_textbox.Clear()
         access_textbox.Clear()
