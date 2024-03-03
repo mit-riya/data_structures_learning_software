@@ -27,7 +27,6 @@ Partial Class stack
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
-        Me.quiz_btn = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
@@ -58,6 +57,10 @@ Partial Class stack
         Me.StackPop = New System.Windows.Forms.Button()
         Me.StackPush = New System.Windows.Forms.Button()
         Me.Label4 = New System.Windows.Forms.Label()
+        Me.RichTextBox5 = New System.Windows.Forms.RichTextBox()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.RichTextBox7 = New System.Windows.Forms.RichTextBox()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.Panel2.SuspendLayout()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
@@ -106,7 +109,10 @@ Partial Class stack
         Me.TabPage1.AutoScrollMinSize = New System.Drawing.Size(0, 700)
         Me.TabPage1.BackColor = System.Drawing.Color.White
         Me.TabPage1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TabPage1.Controls.Add(Me.quiz_btn)
+        Me.TabPage1.Controls.Add(Me.Button2)
+        Me.TabPage1.Controls.Add(Me.RichTextBox7)
+        Me.TabPage1.Controls.Add(Me.Button1)
+        Me.TabPage1.Controls.Add(Me.RichTextBox5)
         Me.TabPage1.Controls.Add(Me.Label2)
         Me.TabPage1.Controls.Add(Me.Label1)
         Me.TabPage1.Location = New System.Drawing.Point(4, 31)
@@ -117,17 +123,6 @@ Partial Class stack
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "Stack"
         '
-        'quiz_btn
-        '
-        Me.quiz_btn.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.quiz_btn.Location = New System.Drawing.Point(902, 522)
-        Me.quiz_btn.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
-        Me.quiz_btn.Name = "quiz_btn"
-        Me.quiz_btn.Size = New System.Drawing.Size(233, 72)
-        Me.quiz_btn.TabIndex = 3
-        Me.quiz_btn.Text = "Start Quiz"
-        Me.quiz_btn.UseVisualStyleBackColor = True
-        '
         'Label2
         '
         Me.Label2.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
@@ -137,7 +132,7 @@ Partial Class stack
         Me.Label2.Location = New System.Drawing.Point(27, 70)
         Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(1137, 582)
+        Me.Label2.Size = New System.Drawing.Size(1116, 844)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = resources.GetString("Label2.Text")
         '
@@ -499,6 +494,56 @@ Partial Class stack
         Me.Label4.TabIndex = 2
         Me.Label4.Text = "Try pushing and Poping to Stack (Max Size = 10)"
         '
+        'RichTextBox5
+        '
+        Me.RichTextBox5.BackColor = System.Drawing.Color.White
+        Me.RichTextBox5.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.RichTextBox5.Font = New System.Drawing.Font("Berlin Sans FB", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RichTextBox5.ForeColor = System.Drawing.Color.MediumOrchid
+        Me.RichTextBox5.Location = New System.Drawing.Point(32, 440)
+        Me.RichTextBox5.Name = "RichTextBox5"
+        Me.RichTextBox5.ReadOnly = True
+        Me.RichTextBox5.Size = New System.Drawing.Size(285, 38)
+        Me.RichTextBox5.TabIndex = 11
+        Me.RichTextBox5.Text = "Ready to test yourself?"
+        '
+        'Button1
+        '
+        Me.Button1.BackColor = System.Drawing.Color.DodgerBlue
+        Me.Button1.Font = New System.Drawing.Font("Berlin Sans FB", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.ForeColor = System.Drawing.Color.White
+        Me.Button1.Location = New System.Drawing.Point(32, 484)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(163, 54)
+        Me.Button1.TabIndex = 12
+        Me.Button1.Text = "Take Quiz"
+        Me.Button1.UseVisualStyleBackColor = False
+        '
+        'RichTextBox7
+        '
+        Me.RichTextBox7.BackColor = System.Drawing.Color.White
+        Me.RichTextBox7.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.RichTextBox7.Font = New System.Drawing.Font("Berlin Sans FB", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RichTextBox7.ForeColor = System.Drawing.Color.MediumOrchid
+        Me.RichTextBox7.Location = New System.Drawing.Point(462, 440)
+        Me.RichTextBox7.Name = "RichTextBox7"
+        Me.RichTextBox7.ReadOnly = True
+        Me.RichTextBox7.Size = New System.Drawing.Size(285, 38)
+        Me.RichTextBox7.TabIndex = 16
+        Me.RichTextBox7.Text = "Try another module!"
+        '
+        'Button2
+        '
+        Me.Button2.BackColor = System.Drawing.Color.DodgerBlue
+        Me.Button2.Font = New System.Drawing.Font("Berlin Sans FB", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.ForeColor = System.Drawing.Color.White
+        Me.Button2.Location = New System.Drawing.Point(462, 484)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(163, 54)
+        Me.Button2.TabIndex = 17
+        Me.Button2.Text = "Back"
+        Me.Button2.UseVisualStyleBackColor = False
+        '
         'stack
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 19.0!)
@@ -527,7 +572,6 @@ Partial Class stack
     Friend WithEvents Panel2 As System.Windows.Forms.Panel
     Friend WithEvents TabControl1 As System.Windows.Forms.TabControl
     Friend WithEvents TabPage1 As System.Windows.Forms.TabPage
-    Friend WithEvents quiz_btn As System.Windows.Forms.Button
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents TabPage2 As System.Windows.Forms.TabPage
@@ -558,5 +602,9 @@ Partial Class stack
     Friend WithEvents StackPop As System.Windows.Forms.Button
     Friend WithEvents StackPush As System.Windows.Forms.Button
     Friend WithEvents Label4 As System.Windows.Forms.Label
+    Friend WithEvents RichTextBox5 As System.Windows.Forms.RichTextBox
+    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents RichTextBox7 As System.Windows.Forms.RichTextBox
+    Friend WithEvents Button2 As System.Windows.Forms.Button
 
 End Class

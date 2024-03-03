@@ -55,7 +55,7 @@ Public Class Vector
     End Sub
 
     'Clears all input/output
-    Private Sub reset_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles reset.Click
+    Private Sub reset_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Reset.Click
         n = 0
         i = 0
         Panel1.Controls.Clear()
