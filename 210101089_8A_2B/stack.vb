@@ -24,7 +24,7 @@
         Next
     End Sub
 
-    Private Sub StackPush_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles StackPush.Click
+    Private Sub StackPush_btn_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles StackPush.Click
         top_el.Text = ""
         If stackSize = 10 Then
             error_label.Text = "Stack is Full"
@@ -41,7 +41,7 @@
 
     End Sub
 
-    Private Sub StackPop_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles StackPop.Click
+    Private Sub StackPop_btn_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles StackPop.Click
         top_el.Text = ""
         If stackSize = 0 Then
             error_label.Text = "Stack is Empty"
@@ -53,7 +53,7 @@
         End If
     End Sub
 
-    Private Sub StackTop_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Top_btn.Click
+    Private Sub StackTop_btn_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Top_btn.Click
         If stackSize = 0 Then
             top_el.Text = "null"
         Else

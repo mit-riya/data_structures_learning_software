@@ -118,8 +118,23 @@ Each button has its own defining function.
 #### Searching
 
 #### Stacks
+`StackPush_btn_Click`  
+**Inputs:** Event handling parameters as stated above.   
+**Outputs:** Inserts the element specified at the top of stack (push function).  
+`StackPop_btn_Click`  
+**Inputs:** Event handling parameters as stated above.   
+**Outputs:** Deletes the top element of stack. (pop function).   
+`StackTop_btn_Click`  
+**Inputs:** Event handling parameters as stated above.   
+**Outputs:** Prints the top element of Stack.
 
 #### Queues
+`enqueue_btn_Click`  
+**Inputs:** Event handling parameters as stated above.   
+**Outputs:** Inserts the element specified at the back of queue (push function).  
+`dequeue_btn_Click`  
+**Inputs:** Event handling parameters as stated above.   
+**Outputs:** Deletes the front element of queue. (pop function). 
 
 ### 5) Back button: 
 `back_btn_Click()`  
