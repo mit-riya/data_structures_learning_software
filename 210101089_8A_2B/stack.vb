@@ -6,6 +6,7 @@
 
     Dim myStack As New Stack(Of String)
     Dim stackSize = 0
+    Dim temp_int As Integer
 
     Private Sub Form1_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
         top_el.Text = ""
@@ -29,11 +30,13 @@
             error_label.Text = "Stack is Full"
         ElseIf String.IsNullOrWhiteSpace(TextBox1.Text) Then
             error_label.Text = "Text Field is Empty"
-        Else
+        ElseIf Integer.TryParse(TextBox1.Text, temp_int) Then
             error_label.Text = ""
             myStack.Push(TextBox1.Text)
             stackSize = stackSize + 1
             update_stack()
+        Else
+            error_label.Text = "Input is not an integer"
         End If
 
     End Sub

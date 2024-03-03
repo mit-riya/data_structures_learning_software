@@ -3,6 +3,7 @@
     Dim myQueue As New Queue(Of String)
     ' Variable to store the size of the queue
     Dim queueSize = 0
+    Dim temp_int As Integer
 
     Private Sub queue_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         ' Initialize queue size and clear error label
@@ -23,11 +24,13 @@
             error_label.Text = "Queue is full"
         ElseIf String.IsNullOrWhiteSpace(TextBox1.Text) Then
             error_label.Text = "Text Field is Empty"
-        Else
+        ElseIf Integer.TryParse(TextBox1.Text, temp_int) Then
             error_label.Text = ""
             myQueue.Enqueue(TextBox1.Text)
             queueSize = queueSize + 1
             update_queue()
+        Else
+            error_label.Text = "Input is not an integer"
         End If
     End Sub
 
