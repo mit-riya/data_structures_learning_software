@@ -38,7 +38,7 @@ Partial Class Register
         '
         'GroupBox1
         '
-        Me.GroupBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.GroupBox1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.GroupBox1.AutoSize = True
         Me.GroupBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(77, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.GroupBox1.Controls.Add(Me.error_label)
@@ -50,7 +50,7 @@ Partial Class Register
         Me.GroupBox1.Controls.Add(Me.email_label)
         Me.GroupBox1.Controls.Add(Me.username_label)
         Me.GroupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.GroupBox1.Location = New System.Drawing.Point(520, 135)
+        Me.GroupBox1.Location = New System.Drawing.Point(650, 135)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(500, 373)
         Me.GroupBox1.TabIndex = 0
@@ -132,10 +132,10 @@ Partial Class Register
         '
         'login_link
         '
-        Me.login_link.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.login_link.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.login_link.AutoSize = True
         Me.login_link.LinkColor = System.Drawing.Color.LimeGreen
-        Me.login_link.Location = New System.Drawing.Point(628, 542)
+        Me.login_link.Location = New System.Drawing.Point(650, 542)
         Me.login_link.Name = "login_link"
         Me.login_link.Size = New System.Drawing.Size(256, 19)
         Me.login_link.TabIndex = 7

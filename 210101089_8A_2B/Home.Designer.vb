@@ -90,7 +90,7 @@ Partial Class Home
         Me.vector_gb.Controls.Add(Me.vector_check)
         Me.vector_gb.Font = New System.Drawing.Font("Berlin Sans FB", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.vector_gb.ForeColor = System.Drawing.Color.White
-        Me.vector_gb.Location = New System.Drawing.Point(48, 919)
+        Me.vector_gb.Location = New System.Drawing.Point(38, 919)
         Me.vector_gb.Name = "vector_gb"
         Me.vector_gb.Size = New System.Drawing.Size(250, 250)
         Me.vector_gb.TabIndex = 25
@@ -104,7 +104,7 @@ Partial Class Home
         Me.vector_text.Name = "vector_text"
         Me.vector_text.Size = New System.Drawing.Size(228, 110)
         Me.vector_text.TabIndex = 7
-        Me.vector_text.Text = "tar tar" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "vector!"
+        Me.vector_text.Text = "\"
         Me.vector_text.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'vector_check
@@ -126,7 +126,7 @@ Partial Class Home
         Me.sorting_gb.Controls.Add(Me.sorting_check)
         Me.sorting_gb.Font = New System.Drawing.Font("Berlin Sans FB", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.sorting_gb.ForeColor = System.Drawing.Color.White
-        Me.sorting_gb.Location = New System.Drawing.Point(357, 281)
+        Me.sorting_gb.Location = New System.Drawing.Point(347, 281)
         Me.sorting_gb.Name = "sorting_gb"
         Me.sorting_gb.Size = New System.Drawing.Size(250, 250)
         Me.sorting_gb.TabIndex = 21
@@ -162,7 +162,7 @@ Partial Class Home
         Me.stack_gb.Controls.Add(Me.stack_check)
         Me.stack_gb.Font = New System.Drawing.Font("Berlin Sans FB", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.stack_gb.ForeColor = System.Drawing.Color.White
-        Me.stack_gb.Location = New System.Drawing.Point(669, 281)
+        Me.stack_gb.Location = New System.Drawing.Point(659, 281)
         Me.stack_gb.Name = "stack_gb"
         Me.stack_gb.Size = New System.Drawing.Size(250, 250)
         Me.stack_gb.TabIndex = 20
@@ -198,7 +198,7 @@ Partial Class Home
         Me.linkedlist_gb.Controls.Add(Me.linkedlist_check)
         Me.linkedlist_gb.Font = New System.Drawing.Font("Berlin Sans FB", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.linkedlist_gb.ForeColor = System.Drawing.Color.White
-        Me.linkedlist_gb.Location = New System.Drawing.Point(669, 602)
+        Me.linkedlist_gb.Location = New System.Drawing.Point(659, 602)
         Me.linkedlist_gb.Name = "linkedlist_gb"
         Me.linkedlist_gb.Size = New System.Drawing.Size(250, 250)
         Me.linkedlist_gb.TabIndex = 23
@@ -234,7 +234,7 @@ Partial Class Home
         Me.searching_gb.Controls.Add(Me.searching_check)
         Me.searching_gb.Font = New System.Drawing.Font("Berlin Sans FB", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.searching_gb.ForeColor = System.Drawing.Color.White
-        Me.searching_gb.Location = New System.Drawing.Point(357, 602)
+        Me.searching_gb.Location = New System.Drawing.Point(347, 602)
         Me.searching_gb.Name = "searching_gb"
         Me.searching_gb.Size = New System.Drawing.Size(250, 250)
         Me.searching_gb.TabIndex = 24
@@ -270,7 +270,7 @@ Partial Class Home
         Me.queue_gb.Controls.Add(Me.queue_check)
         Me.queue_gb.Font = New System.Drawing.Font("Berlin Sans FB", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.queue_gb.ForeColor = System.Drawing.Color.White
-        Me.queue_gb.Location = New System.Drawing.Point(48, 602)
+        Me.queue_gb.Location = New System.Drawing.Point(38, 602)
         Me.queue_gb.Name = "queue_gb"
         Me.queue_gb.Size = New System.Drawing.Size(250, 250)
         Me.queue_gb.TabIndex = 22
@@ -306,7 +306,7 @@ Partial Class Home
         Me.array_gb.Controls.Add(Me.array_check)
         Me.array_gb.Font = New System.Drawing.Font("Berlin Sans FB", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.array_gb.ForeColor = System.Drawing.Color.White
-        Me.array_gb.Location = New System.Drawing.Point(48, 281)
+        Me.array_gb.Location = New System.Drawing.Point(38, 281)
         Me.array_gb.Name = "array_gb"
         Me.array_gb.Size = New System.Drawing.Size(250, 250)
         Me.array_gb.TabIndex = 19
