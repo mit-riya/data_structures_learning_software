@@ -1,6 +1,6 @@
 # Data Structures Learning Software: Technical Documentation
 **Group 8A:**   
-Ravi Lahare, 210101086 
+Ravi Lahare, 210101086  
 Ravi Ranjan Kumar, 210101087  
 Ridhiman Kaur Dhindsa, 210101088   
 Riya Mittal, 210101089   
