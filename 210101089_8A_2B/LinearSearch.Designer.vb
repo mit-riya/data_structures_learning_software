@@ -34,6 +34,8 @@ Partial Class LinearSearch
         Me.txtInputList = New System.Windows.Forms.TextBox()
         Me.btnLoadList = New System.Windows.Forms.Button()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.quiz_btn = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -41,6 +43,7 @@ Partial Class LinearSearch
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Berlin Sans FB", 19.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.MediumOrchid
         Me.Label1.Location = New System.Drawing.Point(31, 194)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(201, 37)
@@ -152,12 +155,39 @@ Partial Class LinearSearch
         Me.Panel2.Size = New System.Drawing.Size(1485, 161)
         Me.Panel2.TabIndex = 24
         '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Berlin Sans FB", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.Color.MediumOrchid
+        Me.Label3.Location = New System.Drawing.Point(42, 850)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(223, 27)
+        Me.Label3.TabIndex = 39
+        Me.Label3.Text = "Try another module!"
+        '
+        'quiz_btn
+        '
+        Me.quiz_btn.BackColor = System.Drawing.Color.DodgerBlue
+        Me.quiz_btn.Font = New System.Drawing.Font("Berlin Sans FB", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.quiz_btn.ForeColor = System.Drawing.Color.White
+        Me.quiz_btn.Location = New System.Drawing.Point(50, 890)
+        Me.quiz_btn.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.quiz_btn.Name = "quiz_btn"
+        Me.quiz_btn.Size = New System.Drawing.Size(200, 62)
+        Me.quiz_btn.TabIndex = 40
+        Me.quiz_btn.Text = "Back"
+        Me.quiz_btn.UseVisualStyleBackColor = False
+        '
         'LinearSearch
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
         Me.ClientSize = New System.Drawing.Size(1482, 953)
+        Me.Controls.Add(Me.quiz_btn)
+        Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Label2)
@@ -165,6 +195,7 @@ Partial Class LinearSearch
         Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Name = "LinearSearch"
         Me.Text = "LinearSearch"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         Me.ResumeLayout(False)
@@ -182,4 +213,6 @@ Partial Class LinearSearch
     Friend WithEvents txtInputList As System.Windows.Forms.TextBox
     Friend WithEvents btnLoadList As System.Windows.Forms.Button
     Friend WithEvents Panel2 As System.Windows.Forms.Panel
+    Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents quiz_btn As System.Windows.Forms.Button
 End Class

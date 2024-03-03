@@ -89,4 +89,15 @@
         End If
     End Sub
 
+    Private Sub FormClosedHandler(ByVal sender As Object, ByVal e As FormClosedEventArgs)
+        ' Close the current form when the new form is closed
+        Me.Close()
+    End Sub
+    Private Sub quiz_btn_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles quiz_btn.Click
+        Dim f2 As New Home()
+        AddHandler f2.FormClosed, AddressOf FormClosedHandler
+        ' Show the BubbleSort form
+        f2.Show()
+        Me.Hide()
+    End Sub
 End Class

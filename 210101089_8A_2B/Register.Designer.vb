@@ -62,7 +62,7 @@ Partial Class Register
         Me.error_label.AutoSize = True
         Me.error_label.Location = New System.Drawing.Point(106, 25)
         Me.error_label.Name = "error_label"
-        Me.error_label.Size = New System.Drawing.Size(65, 23)
+        Me.error_label.Size = New System.Drawing.Size(55, 19)
         Me.error_label.TabIndex = 8
         Me.error_label.Text = "error :"
         '
@@ -72,7 +72,7 @@ Partial Class Register
         Me.password_label.AutoSize = True
         Me.password_label.Location = New System.Drawing.Point(20, 189)
         Me.password_label.Name = "password_label"
-        Me.password_label.Size = New System.Drawing.Size(110, 23)
+        Me.password_label.Size = New System.Drawing.Size(90, 19)
         Me.password_label.TabIndex = 6
         Me.password_label.Text = "Password :"
         '
@@ -81,7 +81,7 @@ Partial Class Register
         Me.password_tb.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.password_tb.Location = New System.Drawing.Point(152, 186)
         Me.password_tb.Name = "password_tb"
-        Me.password_tb.Size = New System.Drawing.Size(321, 30)
+        Me.password_tb.Size = New System.Drawing.Size(321, 27)
         Me.password_tb.TabIndex = 5
         '
         'signup_btn
@@ -99,7 +99,7 @@ Partial Class Register
         Me.email_tb.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.email_tb.Location = New System.Drawing.Point(152, 125)
         Me.email_tb.Name = "email_tb"
-        Me.email_tb.Size = New System.Drawing.Size(321, 30)
+        Me.email_tb.Size = New System.Drawing.Size(321, 27)
         Me.email_tb.TabIndex = 3
         '
         'username_tb
@@ -107,7 +107,7 @@ Partial Class Register
         Me.username_tb.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.username_tb.Location = New System.Drawing.Point(152, 66)
         Me.username_tb.Name = "username_tb"
-        Me.username_tb.Size = New System.Drawing.Size(321, 30)
+        Me.username_tb.Size = New System.Drawing.Size(321, 27)
         Me.username_tb.TabIndex = 2
         '
         'email_label
@@ -116,7 +116,7 @@ Partial Class Register
         Me.email_label.AutoSize = True
         Me.email_label.Location = New System.Drawing.Point(20, 128)
         Me.email_label.Name = "email_label"
-        Me.email_label.Size = New System.Drawing.Size(70, 23)
+        Me.email_label.Size = New System.Drawing.Size(59, 19)
         Me.email_label.TabIndex = 1
         Me.email_label.Text = "Email :"
         '
@@ -126,7 +126,7 @@ Partial Class Register
         Me.username_label.AutoSize = True
         Me.username_label.Location = New System.Drawing.Point(20, 68)
         Me.username_label.Name = "username_label"
-        Me.username_label.Size = New System.Drawing.Size(111, 23)
+        Me.username_label.Size = New System.Drawing.Size(93, 19)
         Me.username_label.TabIndex = 0
         Me.username_label.Text = "Username :"
         '
@@ -137,14 +137,14 @@ Partial Class Register
         Me.login_link.LinkColor = System.Drawing.Color.LimeGreen
         Me.login_link.Location = New System.Drawing.Point(628, 542)
         Me.login_link.Name = "login_link"
-        Me.login_link.Size = New System.Drawing.Size(302, 23)
+        Me.login_link.Size = New System.Drawing.Size(256, 19)
         Me.login_link.TabIndex = 7
         Me.login_link.TabStop = True
         Me.login_link.Text = "Already have an account? Sign In"
         '
         'Register
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(11.0!, 23.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 19.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
@@ -158,6 +158,7 @@ Partial Class Register
         Me.Name = "Register"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Register"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.ResumeLayout(False)

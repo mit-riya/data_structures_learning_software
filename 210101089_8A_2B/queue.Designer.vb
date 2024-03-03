@@ -96,11 +96,11 @@ Partial Class queue
         Me.TabPage1.Controls.Add(Me.quiz_btn)
         Me.TabPage1.Controls.Add(Me.Label2)
         Me.TabPage1.Controls.Add(Me.Label1)
-        Me.TabPage1.Location = New System.Drawing.Point(4, 36)
+        Me.TabPage1.Location = New System.Drawing.Point(4, 34)
         Me.TabPage1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.TabPage1.Name = "TabPage1"
         Me.TabPage1.Padding = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.TabPage1.Size = New System.Drawing.Size(1220, 423)
+        Me.TabPage1.Size = New System.Drawing.Size(1220, 425)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "Queue"
         '
@@ -130,7 +130,7 @@ Partial Class queue
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(37, 18)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(168, 46)
+        Me.Label1.Size = New System.Drawing.Size(144, 39)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Queue :"
         '
@@ -155,11 +155,11 @@ Partial Class queue
         Me.TabPage2.Controls.Add(Me.dequeue_btn)
         Me.TabPage2.Controls.Add(Me.enqueue_btn)
         Me.TabPage2.Controls.Add(Me.Label4)
-        Me.TabPage2.Location = New System.Drawing.Point(4, 36)
+        Me.TabPage2.Location = New System.Drawing.Point(4, 34)
         Me.TabPage2.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.TabPage2.Name = "TabPage2"
         Me.TabPage2.Padding = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.TabPage2.Size = New System.Drawing.Size(1220, 423)
+        Me.TabPage2.Size = New System.Drawing.Size(1220, 425)
         Me.TabPage2.TabIndex = 2
         Me.TabPage2.Text = "Play with Queue"
         '
@@ -170,7 +170,7 @@ Partial Class queue
         Me.error_label.ForeColor = System.Drawing.Color.Red
         Me.error_label.Location = New System.Drawing.Point(372, 126)
         Me.error_label.Name = "error_label"
-        Me.error_label.Size = New System.Drawing.Size(108, 32)
+        Me.error_label.Size = New System.Drawing.Size(92, 29)
         Me.error_label.TabIndex = 34
         Me.error_label.Text = "Label3"
         '
@@ -213,7 +213,7 @@ Partial Class queue
         Me.TextBox1.Location = New System.Drawing.Point(54, 437)
         Me.TextBox1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(157, 41)
+        Me.TextBox1.Size = New System.Drawing.Size(157, 36)
         Me.TextBox1.TabIndex = 20
         '
         'QueueBox7
@@ -321,13 +321,13 @@ Partial Class queue
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.Location = New System.Drawing.Point(233, 54)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(998, 46)
+        Me.Label4.Size = New System.Drawing.Size(859, 39)
         Me.Label4.TabIndex = 2
         Me.Label4.Text = "Try enqueue and dequeue to Queue (Max Size = 10)"
         '
         'queue
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(10.0!, 24.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 22.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1228, 624)
         Me.Controls.Add(Me.Panel2)
@@ -337,6 +337,7 @@ Partial Class queue
         Me.Name = "queue"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "queue"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.Panel2.ResumeLayout(False)
         Me.TabControl1.ResumeLayout(False)
         Me.TabPage1.ResumeLayout(False)

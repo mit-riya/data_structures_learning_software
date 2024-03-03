@@ -249,6 +249,7 @@ Partial Class Quiz
         Me.Name = "Quiz"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Quiz"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.Panel1.ResumeLayout(False)
         Me.Panel2.ResumeLayout(False)
         Me.que_gb.ResumeLayout(False)

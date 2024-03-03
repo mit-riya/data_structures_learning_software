@@ -32,6 +32,8 @@ Partial Class SelectionSort
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.quiz_btn = New System.Windows.Forms.Button()
+        Me.Label6 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -81,6 +83,7 @@ Partial Class SelectionSort
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Berlin Sans FB", 19.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.MediumOrchid
         Me.Label2.Location = New System.Drawing.Point(38, 193)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(198, 37)
@@ -100,6 +103,7 @@ Partial Class SelectionSort
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Berlin Sans FB", 19.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.ForeColor = System.Drawing.Color.MediumOrchid
         Me.Label4.Location = New System.Drawing.Point(38, 296)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(342, 37)
@@ -123,8 +127,33 @@ Partial Class SelectionSort
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel2.Location = New System.Drawing.Point(0, 0)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(1482, 161)
+        Me.Panel2.Size = New System.Drawing.Size(1470, 161)
         Me.Panel2.TabIndex = 30
+        '
+        'quiz_btn
+        '
+        Me.quiz_btn.BackColor = System.Drawing.Color.DodgerBlue
+        Me.quiz_btn.Font = New System.Drawing.Font("Berlin Sans FB", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.quiz_btn.ForeColor = System.Drawing.Color.White
+        Me.quiz_btn.Location = New System.Drawing.Point(50, 945)
+        Me.quiz_btn.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.quiz_btn.Name = "quiz_btn"
+        Me.quiz_btn.Size = New System.Drawing.Size(200, 62)
+        Me.quiz_btn.TabIndex = 41
+        Me.quiz_btn.Text = "Back"
+        Me.quiz_btn.UseVisualStyleBackColor = False
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Berlin Sans FB", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.ForeColor = System.Drawing.Color.MediumOrchid
+        Me.Label6.Location = New System.Drawing.Point(42, 915)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(223, 27)
+        Me.Label6.TabIndex = 42
+        Me.Label6.Text = "Try another module!"
         '
         'SelectionSort
         '
@@ -132,6 +161,8 @@ Partial Class SelectionSort
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
         Me.ClientSize = New System.Drawing.Size(1482, 953)
+        Me.Controls.Add(Me.Label6)
+        Me.Controls.Add(Me.quiz_btn)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
@@ -140,6 +171,7 @@ Partial Class SelectionSort
         Me.Controls.Add(Me.Panel1)
         Me.Name = "SelectionSort"
         Me.Text = "SelectionSort"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         Me.ResumeLayout(False)
@@ -155,4 +187,6 @@ Partial Class SelectionSort
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents Panel2 As System.Windows.Forms.Panel
+    Friend WithEvents quiz_btn As System.Windows.Forms.Button
+    Friend WithEvents Label6 As System.Windows.Forms.Label
 End Class

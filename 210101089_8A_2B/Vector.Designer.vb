@@ -57,6 +57,8 @@ Partial Class Vector
         Me.Insert_elem = New System.Windows.Forms.Button()
         Me.RichTextBox6 = New System.Windows.Forms.RichTextBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.RichTextBox7 = New System.Windows.Forms.RichTextBox()
+        Me.Button2 = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -458,6 +460,31 @@ Partial Class Vector
         Me.Panel2.Size = New System.Drawing.Size(1748, 161)
         Me.Panel2.TabIndex = 14
         '
+        'RichTextBox7
+        '
+        Me.RichTextBox7.BackColor = System.Drawing.Color.White
+        Me.RichTextBox7.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.RichTextBox7.Font = New System.Drawing.Font("Berlin Sans FB", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RichTextBox7.ForeColor = System.Drawing.Color.MediumOrchid
+        Me.RichTextBox7.Location = New System.Drawing.Point(600, 832)
+        Me.RichTextBox7.Name = "RichTextBox7"
+        Me.RichTextBox7.ReadOnly = True
+        Me.RichTextBox7.Size = New System.Drawing.Size(285, 38)
+        Me.RichTextBox7.TabIndex = 15
+        Me.RichTextBox7.Text = "Try another module!"
+        '
+        'Button2
+        '
+        Me.Button2.BackColor = System.Drawing.Color.DodgerBlue
+        Me.Button2.Font = New System.Drawing.Font("Berlin Sans FB", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.ForeColor = System.Drawing.Color.White
+        Me.Button2.Location = New System.Drawing.Point(610, 876)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(163, 54)
+        Me.Button2.TabIndex = 16
+        Me.Button2.Text = "Back"
+        Me.Button2.UseVisualStyleBackColor = False
+        '
         'Vector
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -465,6 +492,8 @@ Partial Class Vector
         Me.AutoScroll = True
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(1482, 953)
+        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.RichTextBox7)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.RichTextBox6)
         Me.Controls.Add(Me.RichTextBox5)
@@ -480,6 +509,7 @@ Partial Class Vector
         Me.Controls.Add(Me.PictureBox1)
         Me.Name = "Vector"
         Me.Text = "Form1"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
@@ -522,4 +552,6 @@ Partial Class Vector
     Friend WithEvents new_num_txbx As System.Windows.Forms.TextBox
     Friend WithEvents Label8 As System.Windows.Forms.Label
     Friend WithEvents Panel2 As System.Windows.Forms.Panel
+    Friend WithEvents RichTextBox7 As System.Windows.Forms.RichTextBox
+    Friend WithEvents Button2 As System.Windows.Forms.Button
 End Class

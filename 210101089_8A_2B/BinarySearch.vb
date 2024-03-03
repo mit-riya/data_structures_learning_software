@@ -6,6 +6,11 @@
     Dim delayMilliseconds As Integer = 1000
     Dim elementLabels As New List(Of Label)()
 
+    Private Sub FormClosedHandler(ByVal sender As Object, ByVal e As FormClosedEventArgs)
+        ' Close the current form when the new form is closed
+        Me.Close()
+    End Sub
+
     Private Sub BinarySearch_Load(ByVal sender As Object, ByVal e As EventArgs) Handles MyBase.Load
         Label3.Text = "Binary Search is defined as a searching algorithm used in a sorted array by repeatedly dividing the search interval in half."
         Dim explanation As String = "In this algorithm," & vbCrLf &
@@ -189,4 +194,11 @@
         Next
     End Sub
 
+    Private Sub quiz_btn_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles quiz_btn.Click
+        Dim f2 As New Home()
+        AddHandler f2.FormClosed, AddressOf FormClosedHandler
+        ' Show the BubbleSort form
+        f2.Show()
+        Me.Hide()
+    End Sub
 End Class

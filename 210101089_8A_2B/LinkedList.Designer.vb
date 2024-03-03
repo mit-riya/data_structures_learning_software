@@ -26,6 +26,8 @@ Partial Class LinkedList
         Me.quiz_btn = New System.Windows.Forms.Button()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Label11 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
@@ -73,11 +75,13 @@ Partial Class LinkedList
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel2.Location = New System.Drawing.Point(0, 0)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(1202, 161)
+        Me.Panel2.Size = New System.Drawing.Size(1207, 161)
         Me.Panel2.TabIndex = 1
         '
         'Panel1
         '
+        Me.Panel1.Controls.Add(Me.Button1)
+        Me.Panel1.Controls.Add(Me.Label11)
         Me.Panel1.Controls.Add(Me.Label9)
         Me.Panel1.Controls.Add(Me.Label10)
         Me.Panel1.Controls.Add(Me.Label7)
@@ -89,8 +93,33 @@ Partial Class LinkedList
         Me.Panel1.Font = New System.Drawing.Font("Arial", 10.0!)
         Me.Panel1.Location = New System.Drawing.Point(0, 161)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1202, 1039)
+        Me.Panel1.Size = New System.Drawing.Size(1207, 1039)
         Me.Panel1.TabIndex = 24
+        '
+        'Button1
+        '
+        Me.Button1.BackColor = System.Drawing.Color.DodgerBlue
+        Me.Button1.Font = New System.Drawing.Font("Berlin Sans FB", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.ForeColor = System.Drawing.Color.White
+        Me.Button1.Location = New System.Drawing.Point(610, 928)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(200, 62)
+        Me.Button1.TabIndex = 38
+        Me.Button1.Text = "Back"
+        Me.Button1.UseVisualStyleBackColor = False
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Font = New System.Drawing.Font("Berlin Sans FB", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.ForeColor = System.Drawing.Color.MediumOrchid
+        Me.Label11.Location = New System.Drawing.Point(600, 890)
+        Me.Label11.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(223, 27)
+        Me.Label11.TabIndex = 37
+        Me.Label11.Text = "Try another module!"
         '
         'Label9
         '
@@ -121,7 +150,7 @@ Partial Class LinkedList
         Me.Label7.Location = New System.Drawing.Point(23, 26)
         Me.Label7.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(200, 44)
+        Me.Label7.Size = New System.Drawing.Size(172, 37)
         Me.Label7.TabIndex = 20
         Me.Label7.Text = "Linked List"
         '
@@ -133,7 +162,7 @@ Partial Class LinkedList
         Me.Label6.Location = New System.Drawing.Point(25, 219)
         Me.Label6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(363, 33)
+        Me.Label6.Size = New System.Drawing.Size(302, 27)
         Me.Label6.TabIndex = 36
         Me.Label6.Text = "Basic Linked List Operations"
         '
@@ -145,7 +174,7 @@ Partial Class LinkedList
         Me.Label13.Location = New System.Drawing.Point(25, 890)
         Me.Label13.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(293, 33)
+        Me.Label13.Size = New System.Drawing.Size(245, 27)
         Me.Label13.TabIndex = 35
         Me.Label13.Text = "Ready to test yourself?"
         '
@@ -224,7 +253,7 @@ Partial Class LinkedList
         Me.Label3.Location = New System.Drawing.Point(35, 327)
         Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(170, 26)
+        Me.Label3.Size = New System.Drawing.Size(142, 23)
         Me.Label3.TabIndex = 31
         Me.Label3.Text = "Delete element:"
         '
@@ -249,7 +278,7 @@ Partial Class LinkedList
         Me.Label8.Location = New System.Drawing.Point(469, 281)
         Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(202, 26)
+        Me.Label8.Size = New System.Drawing.Size(166, 23)
         Me.Label8.TabIndex = 29
         Me.Label8.Text = "With new element:"
         '
@@ -288,7 +317,7 @@ Partial Class LinkedList
         Me.Label4.Location = New System.Drawing.Point(33, 281)
         Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(181, 26)
+        Me.Label4.Size = New System.Drawing.Size(150, 23)
         Me.Label4.TabIndex = 26
         Me.Label4.Text = "Update element:"
         '
@@ -327,7 +356,7 @@ Partial Class LinkedList
         Me.Label5.Location = New System.Drawing.Point(34, 232)
         Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(171, 26)
+        Me.Label5.Size = New System.Drawing.Size(142, 23)
         Me.Label5.TabIndex = 23
         Me.Label5.Text = "Search element:"
         '
@@ -366,7 +395,7 @@ Partial Class LinkedList
         Me.Label2.Location = New System.Drawing.Point(34, 190)
         Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(159, 26)
+        Me.Label2.Size = New System.Drawing.Size(131, 23)
         Me.Label2.TabIndex = 20
         Me.Label2.Text = "Insert element:"
         '
@@ -387,13 +416,13 @@ Partial Class LinkedList
         Me.Label1.Location = New System.Drawing.Point(32, 43)
         Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(155, 33)
+        Me.Label1.Size = New System.Drawing.Size(130, 27)
         Me.Label1.TabIndex = 18
         Me.Label1.Text = "Linked List:"
         '
         'LinkedList
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(11.0!, 23.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 19.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
         Me.AutoScrollMinSize = New System.Drawing.Size(0, 1200)
@@ -406,6 +435,7 @@ Partial Class LinkedList
         Me.Name = "LinkedList"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "LinkedList"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         Me.Panel3.ResumeLayout(False)
@@ -439,4 +469,6 @@ Partial Class LinkedList
     Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents Label9 As System.Windows.Forms.Label
     Friend WithEvents Label10 As System.Windows.Forms.Label
+    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents Label11 As System.Windows.Forms.Label
 End Class

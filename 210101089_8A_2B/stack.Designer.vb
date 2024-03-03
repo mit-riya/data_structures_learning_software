@@ -109,11 +109,11 @@ Partial Class stack
         Me.TabPage1.Controls.Add(Me.quiz_btn)
         Me.TabPage1.Controls.Add(Me.Label2)
         Me.TabPage1.Controls.Add(Me.Label1)
-        Me.TabPage1.Location = New System.Drawing.Point(4, 35)
+        Me.TabPage1.Location = New System.Drawing.Point(4, 31)
         Me.TabPage1.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.TabPage1.Name = "TabPage1"
         Me.TabPage1.Padding = New System.Windows.Forms.Padding(4, 3, 4, 3)
-        Me.TabPage1.Size = New System.Drawing.Size(1232, 436)
+        Me.TabPage1.Size = New System.Drawing.Size(1232, 440)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "Stack"
         '
@@ -137,7 +137,7 @@ Partial Class stack
         Me.Label2.Location = New System.Drawing.Point(27, 70)
         Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(1158, 316)
+        Me.Label2.Size = New System.Drawing.Size(1137, 582)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = resources.GetString("Label2.Text")
         '
@@ -148,7 +148,7 @@ Partial Class stack
         Me.Label1.Location = New System.Drawing.Point(42, 17)
         Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(150, 46)
+        Me.Label1.Size = New System.Drawing.Size(127, 39)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Stack :"
         '
@@ -185,11 +185,11 @@ Partial Class stack
         Me.TabPage2.Controls.Add(Me.StackPop)
         Me.TabPage2.Controls.Add(Me.StackPush)
         Me.TabPage2.Controls.Add(Me.Label4)
-        Me.TabPage2.Location = New System.Drawing.Point(4, 35)
+        Me.TabPage2.Location = New System.Drawing.Point(4, 31)
         Me.TabPage2.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.TabPage2.Name = "TabPage2"
         Me.TabPage2.Padding = New System.Windows.Forms.Padding(4, 3, 4, 3)
-        Me.TabPage2.Size = New System.Drawing.Size(1232, 436)
+        Me.TabPage2.Size = New System.Drawing.Size(1232, 440)
         Me.TabPage2.TabIndex = 2
         Me.TabPage2.Text = "Play with Stack"
         '
@@ -223,7 +223,7 @@ Partial Class stack
         Me.error_label.Location = New System.Drawing.Point(203, 110)
         Me.error_label.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.error_label.Name = "error_label"
-        Me.error_label.Size = New System.Drawing.Size(108, 32)
+        Me.error_label.Size = New System.Drawing.Size(92, 29)
         Me.error_label.TabIndex = 34
         Me.error_label.Text = "Label3"
         '
@@ -379,7 +379,7 @@ Partial Class stack
         Me.TextBox1.Location = New System.Drawing.Point(783, 216)
         Me.TextBox1.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(173, 41)
+        Me.TextBox1.Size = New System.Drawing.Size(173, 36)
         Me.TextBox1.TabIndex = 20
         '
         'StackBox7
@@ -495,13 +495,13 @@ Partial Class stack
         Me.Label4.Location = New System.Drawing.Point(50, 41)
         Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(935, 46)
+        Me.Label4.Size = New System.Drawing.Size(802, 39)
         Me.Label4.TabIndex = 2
         Me.Label4.Text = "Try pushing and Poping to Stack (Max Size = 10)"
         '
         'stack
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(11.0!, 23.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 19.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
         Me.ClientSize = New System.Drawing.Size(1240, 636)
@@ -513,6 +513,7 @@ Partial Class stack
         Me.Name = "stack"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Stack"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.Panel2.ResumeLayout(False)
         Me.TabControl1.ResumeLayout(False)
         Me.TabPage1.ResumeLayout(False)

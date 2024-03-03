@@ -105,4 +105,12 @@ Public Class Vector
         f2.Show()
         Me.Hide()
     End Sub
+
+    Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
+        Dim f2 As New Home()
+        AddHandler f2.FormClosed, AddressOf FormClosedHandler
+        ' Show the BubbleSort form
+        f2.Show()
+        Me.Hide()
+    End Sub
 End Class
