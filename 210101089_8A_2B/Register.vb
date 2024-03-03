@@ -1,5 +1,9 @@
 ﻿Imports System.Data.Odbc
 Public Class Register
+    Private Sub FormClosedHandler(ByVal sender As Object, ByVal e As FormClosedEventArgs)
+        ' Close the current form when the new form is closed
+        Me.Close()
+    End Sub
 
     Private Sub Register_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         error_label.ForeColor = Color.Red
@@ -40,12 +44,18 @@ Public Class Register
         dml.ExecuteNonQuery()
 
         MessageBox.Show("Registration successful..", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
-        Login.Show()
-        Me.Close()
+        Dim f2 As New Login()
+        AddHandler f2.FormClosed, AddressOf FormClosedHandler
+        ' Show the BubbleSort form
+        f2.Show()
+        Me.Hide()
     End Sub
 
     Private Sub login_link_LinkClicked(ByVal sender As System.Object, ByVal e As System.Windows.Forms.LinkLabelLinkClickedEventArgs) Handles login_link.LinkClicked
-        Login.Show()
-        Me.Close()
+        Dim f2 As New Login()
+        AddHandler f2.FormClosed, AddressOf FormClosedHandler
+        ' Show the BubbleSort form
+        f2.Show()
+        Me.Hide()
     End Sub
 End Class

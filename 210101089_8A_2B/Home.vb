@@ -27,8 +27,11 @@ Public Class Home
     End Sub
 
     Private Sub logout_btn_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles logout_btn.Click
-        Login.Show()
-        Me.Close()
+        Dim f2 As New Login()
+        AddHandler f2.FormClosed, AddressOf FormClosedHandler
+        ' Show the BubbleSort form
+        f2.Show()
+        Me.Hide()
     End Sub
 
     Private Sub array_gb_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles array_gb.Click, array_text.Click

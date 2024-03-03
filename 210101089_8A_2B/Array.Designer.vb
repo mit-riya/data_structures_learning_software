@@ -71,7 +71,7 @@ Partial Class Array
         Me.Panel1.Location = New System.Drawing.Point(0, 161)
         Me.Panel1.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1202, 939)
+        Me.Panel1.Size = New System.Drawing.Size(1207, 939)
         Me.Panel1.TabIndex = 25
         '
         'Label13
@@ -82,7 +82,7 @@ Partial Class Array
         Me.Label13.Location = New System.Drawing.Point(42, 795)
         Me.Label13.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(293, 33)
+        Me.Label13.Size = New System.Drawing.Size(245, 27)
         Me.Label13.TabIndex = 34
         Me.Label13.Text = "Ready to test yourself?"
         '
@@ -105,7 +105,7 @@ Partial Class Array
         Me.Label11.Location = New System.Drawing.Point(42, 258)
         Me.Label11.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(309, 33)
+        Me.Label11.Size = New System.Drawing.Size(257, 27)
         Me.Label11.TabIndex = 32
         Me.Label11.Text = "Basic Vector Operations"
         '
@@ -127,7 +127,7 @@ Partial Class Array
         Me.Label9.Location = New System.Drawing.Point(39, 48)
         Me.Label9.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(125, 44)
+        Me.Label9.Size = New System.Drawing.Size(106, 37)
         Me.Label9.TabIndex = 31
         Me.Label9.Text = "Arrays"
         '
@@ -198,7 +198,7 @@ Partial Class Array
         Me.Label8.Location = New System.Drawing.Point(302, 212)
         Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(202, 26)
+        Me.Label8.Size = New System.Drawing.Size(166, 23)
         Me.Label8.TabIndex = 19
         Me.Label8.Text = "With new element:"
         '
@@ -315,7 +315,7 @@ Partial Class Array
         Me.Label7.Location = New System.Drawing.Point(784, 166)
         Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(135, 26)
+        Me.Label7.Size = New System.Drawing.Size(113, 23)
         Me.Label7.TabIndex = 10
         Me.Label7.Text = "Output A[i]:"
         '
@@ -327,7 +327,7 @@ Partial Class Array
         Me.Label6.Location = New System.Drawing.Point(817, 116)
         Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(102, 26)
+        Me.Label6.Size = New System.Drawing.Size(85, 23)
         Me.Label6.TabIndex = 9
         Me.Label6.Text = "Size of A:"
         '
@@ -392,7 +392,7 @@ Partial Class Array
         Me.Label5.Location = New System.Drawing.Point(20, 161)
         Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(167, 26)
+        Me.Label5.Size = New System.Drawing.Size(138, 23)
         Me.Label5.TabIndex = 4
         Me.Label5.Text = "Access index (i):"
         '
@@ -404,7 +404,7 @@ Partial Class Array
         Me.Label4.Location = New System.Drawing.Point(20, 215)
         Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(152, 26)
+        Me.Label4.Size = New System.Drawing.Size(127, 23)
         Me.Label4.TabIndex = 3
         Me.Label4.Text = "Update index:"
         '
@@ -416,7 +416,7 @@ Partial Class Array
         Me.Label3.Location = New System.Drawing.Point(20, 269)
         Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(182, 26)
+        Me.Label3.Size = New System.Drawing.Size(150, 23)
         Me.Label3.TabIndex = 2
         Me.Label3.Text = "Sum of elements:"
         '
@@ -428,7 +428,7 @@ Partial Class Array
         Me.Label2.Location = New System.Drawing.Point(20, 112)
         Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(159, 26)
+        Me.Label2.Size = New System.Drawing.Size(131, 23)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Insert element:"
         '
@@ -440,7 +440,7 @@ Partial Class Array
         Me.Label1.Location = New System.Drawing.Point(20, 34)
         Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(142, 33)
+        Me.Label1.Size = New System.Drawing.Size(116, 27)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Array (A):"
         '
@@ -452,12 +452,12 @@ Partial Class Array
         Me.Panel2.Location = New System.Drawing.Point(0, 0)
         Me.Panel2.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(1202, 161)
+        Me.Panel2.Size = New System.Drawing.Size(1207, 161)
         Me.Panel2.TabIndex = 1
         '
         'Array
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(11.0!, 23.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 19.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
         Me.AutoScrollMinSize = New System.Drawing.Size(0, 1100)

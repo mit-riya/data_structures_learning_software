@@ -3,7 +3,10 @@ Public Class Quiz
     Dim score As Integer = 0
     Dim k As Integer = -1
     Private SelectedOptions(10) As Integer
-
+    Private Sub FormClosedHandler(ByVal sender As Object, ByVal e As FormClosedEventArgs)
+        ' Close the current form when the new form is closed
+        Me.Close()
+    End Sub
     Public Structure QuizQuestion
         Public Question As String
         Public Option1 As String
@@ -116,8 +119,11 @@ Public Class Quiz
             End If
 
             MessageBox.Show("Your score is: " & score)
-            Home.Show()
-            Me.Close()
+            Dim f2 As New Home()
+            AddHandler f2.FormClosed, AddressOf FormClosedHandler
+            ' Show the BubbleSort form
+            f2.Show()
+            Me.Hide()
         End If
     End Sub
 End Class
