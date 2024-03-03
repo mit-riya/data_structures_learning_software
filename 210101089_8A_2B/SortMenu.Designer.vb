@@ -24,15 +24,15 @@ Partial Class SortMenu
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(SortMenu))
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.ShapeContainer1 = New Microsoft.VisualBasic.PowerPacks.ShapeContainer()
-        Me.RectangleShape1 = New Microsoft.VisualBasic.PowerPacks.RectangleShape()
-        Me.RichTextBox5 = New System.Windows.Forms.RichTextBox()
         Me.Button4 = New System.Windows.Forms.Button()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Button5 = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
@@ -47,18 +47,6 @@ Partial Class SortMenu
         Me.PictureBox1.Size = New System.Drawing.Size(670, 958)
         Me.PictureBox1.TabIndex = 12
         Me.PictureBox1.TabStop = False
-        '
-        'RichTextBox1
-        '
-        Me.RichTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.RichTextBox1.Font = New System.Drawing.Font("Jokerman", 22.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RichTextBox1.ForeColor = System.Drawing.Color.DodgerBlue
-        Me.RichTextBox1.Location = New System.Drawing.Point(962, 58)
-        Me.RichTextBox1.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
-        Me.RichTextBox1.Name = "RichTextBox1"
-        Me.RichTextBox1.Size = New System.Drawing.Size(330, 66)
-        Me.RichTextBox1.TabIndex = 16
-        Me.RichTextBox1.Text = "Sorting"
         '
         'Panel1
         '
@@ -108,36 +96,6 @@ Partial Class SortMenu
         Me.Button1.Text = "Bubble Sort"
         Me.Button1.UseVisualStyleBackColor = False
         '
-        'ShapeContainer1
-        '
-        Me.ShapeContainer1.Location = New System.Drawing.Point(0, 0)
-        Me.ShapeContainer1.Margin = New System.Windows.Forms.Padding(0)
-        Me.ShapeContainer1.Name = "ShapeContainer1"
-        Me.ShapeContainer1.Shapes.AddRange(New Microsoft.VisualBasic.PowerPacks.Shape() {Me.RectangleShape1})
-        Me.ShapeContainer1.Size = New System.Drawing.Size(1482, 953)
-        Me.ShapeContainer1.TabIndex = 18
-        Me.ShapeContainer1.TabStop = False
-        '
-        'RectangleShape1
-        '
-        Me.RectangleShape1.BackColor = System.Drawing.SystemColors.Highlight
-        Me.RectangleShape1.Location = New System.Drawing.Point(959, 58)
-        Me.RectangleShape1.Name = "RectangleShape1"
-        Me.RectangleShape1.Size = New System.Drawing.Size(337, 71)
-        '
-        'RichTextBox5
-        '
-        Me.RichTextBox5.BackColor = System.Drawing.Color.White
-        Me.RichTextBox5.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.RichTextBox5.Font = New System.Drawing.Font("Berlin Sans FB", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RichTextBox5.ForeColor = System.Drawing.Color.MediumOrchid
-        Me.RichTextBox5.Location = New System.Drawing.Point(927, 674)
-        Me.RichTextBox5.Name = "RichTextBox5"
-        Me.RichTextBox5.ReadOnly = True
-        Me.RichTextBox5.Size = New System.Drawing.Size(285, 38)
-        Me.RichTextBox5.TabIndex = 19
-        Me.RichTextBox5.Text = "Ready to test yourself?"
-        '
         'Button4
         '
         Me.Button4.BackColor = System.Drawing.Color.DodgerBlue
@@ -150,17 +108,63 @@ Partial Class SortMenu
         Me.Button4.Text = "Take Quiz"
         Me.Button4.UseVisualStyleBackColor = False
         '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Berlin Sans FB", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Label2.Location = New System.Drawing.Point(958, 61)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(203, 66)
+        Me.Label2.TabIndex = 24
+        Me.Label2.Text = "Sorting"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Berlin Sans FB", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.MediumOrchid
+        Me.Label1.Location = New System.Drawing.Point(925, 659)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(293, 33)
+        Me.Label1.TabIndex = 25
+        Me.Label1.Text = "Ready to test yourself?"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Berlin Sans FB", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.Color.MediumOrchid
+        Me.Label3.Location = New System.Drawing.Point(936, 831)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(268, 33)
+        Me.Label3.TabIndex = 26
+        Me.Label3.Text = "Try another module!"
+        '
+        'Button5
+        '
+        Me.Button5.BackColor = System.Drawing.Color.DodgerBlue
+        Me.Button5.Font = New System.Drawing.Font("Berlin Sans FB", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button5.ForeColor = System.Drawing.Color.White
+        Me.Button5.Location = New System.Drawing.Point(984, 887)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(163, 54)
+        Me.Button5.TabIndex = 27
+        Me.Button5.Text = "Back"
+        Me.Button5.UseVisualStyleBackColor = False
+        '
         'SortMenu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1482, 953)
+        Me.Controls.Add(Me.Button5)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Button4)
-        Me.Controls.Add(Me.RichTextBox5)
         Me.Controls.Add(Me.Panel1)
-        Me.Controls.Add(Me.RichTextBox1)
         Me.Controls.Add(Me.PictureBox1)
-        Me.Controls.Add(Me.ShapeContainer1)
         Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.Name = "SortMenu"
@@ -169,16 +173,17 @@ Partial Class SortMenu
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
-    Friend WithEvents RichTextBox1 As System.Windows.Forms.RichTextBox
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents Button3 As System.Windows.Forms.Button
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents ShapeContainer1 As Microsoft.VisualBasic.PowerPacks.ShapeContainer
-    Friend WithEvents RectangleShape1 As Microsoft.VisualBasic.PowerPacks.RectangleShape
-    Friend WithEvents RichTextBox5 As System.Windows.Forms.RichTextBox
     Friend WithEvents Button4 As System.Windows.Forms.Button
+    Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents Button5 As System.Windows.Forms.Button
 End Class
