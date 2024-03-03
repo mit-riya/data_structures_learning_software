@@ -113,9 +113,36 @@ Each button has its own defining function.
 **Inputs:** Event handling parameters as stated above.   
 **Outputs:** Clears all input fields and output displays.
 
-#### Sorting
+#### Insertion Sort
+bntSort_Click
+**Inputs:** Event handling parameters as stated above.   
+**Outputs:** Displays the array and sorts it visually using the insertion sort algorithm.
 
-#### Searching
+#### Bubble Sort
+bntSort_Click
+**Inputs:** Event handling parameters as stated above.   
+**Outputs:** Displays the array and sorts it visually using the bubble sort algorithm.
+
+#### Selection Sort
+bntSort_Click
+**Inputs:** Event handling parameters as stated above.   
+**Outputs:** Displays the array and sorts it visually using the selection sort algorithm.
+
+#### Linear Search
+btnLoad_Click
+**Inputs:** Event handling parameters as stated above.   
+**Outputs:** Displays the sorted array given as input.
+btnSort_Click
+**Inputs:** Event handling parameters as stated above.   
+**Outputs:** Takes an integer to find as input and performs linear search on the array visually.
+
+#### Binary Search
+btnLoad_Click
+**Inputs:** Event handling parameters as stated above.   
+**Outputs:** Displays the sorted array given as input.
+btnSort_Click
+**Inputs:** Event handling parameters as stated above.   
+**Outputs:** Takes an integer to find as input and performs binary search on the array visually.
 
 #### Stacks
 `StackPush_btn_Click`  
